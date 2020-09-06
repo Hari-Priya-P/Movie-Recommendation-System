@@ -8,15 +8,15 @@ Used the 'MovieLens' dataset to build movie recommendation system. Integrated th
 - Combined model ( SVD + CF)
 - Hybrid model
 
-#### Popularity based model
+#### 1. Popularity based model
 - Genre wise popular movies
 - Computed on Popularity metric from TMDB data and Weighted Rating from IMDB 
 
-#### Content based model
+#### 2. Content based model
 - User profile based on item profiles : Genre and Year of release of movie
 - Movie - Movie similarity
 
-#### Collaborative Filtering
+#### 3. Collaborative Filtering
 Used KNN (k- nearest neighbors) algorithm with Surprise library
 Variations of KNN based approaches:
 - KNNBasic
@@ -24,17 +24,17 @@ Variations of KNN based approaches:
 - KNNWithZScore
 - KNNBaseline : integrates the baseline average ratings
 
-#### Matrix Factorization
+#### 4. Matrix Factorization
 Matrix Factorisation algorithms using Surprise library.
 - SVD : baseline estimates + latent factor predictions
 - SVDpp : SVD + considers implicit ratings
 
-#### Combined Model
+#### 5. Combined Model
 - Matrix Factorization + CF 
 - Weighted linear combination of prediction ratings
 - Combined : KNNBaseline (with pearson baseline similarity), SVDpp, SVD, BaselineOnly
 
-#### Hybrid Model
+#### 6. Hybrid Model
 Combination of recommendations using:
 - Combined model ( SVD + CF)
 - Content Based Movie-Movie Similarity
